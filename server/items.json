@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Learn Squat",
+      "category": "Strength Training",
+      "priceCents": 1000,
+      "imageItem": "squat_item.1784dad6.png",
+      "file": "squat.txt",
+      "listId": 3
+    },
+    {
+      "id": 2,
+      "name": "Learn Deadlift",
+      "category": "Strength Training",
+      "priceCents": 1000,
+      "imageItem": "deadlift_item.bf358368.png",
+      "file": "deadlift.txt",
+      "listId": 4
+    },
+    {
+      "id": 3,
+      "name": "Learn Bench Press",
+      "category": "Strength Training",
+      "priceCents": 1000,
+      "imageItem": "benchpress_item.8e6e6eb4.png",
+      "file": "bench-press.txt",
+      "listId": 5
+    },
+    {
+      "id": 4,
+      "name": "Learn Overhead Press",
+      "category": "Strength Training",
+      "priceCents": 1000,
+      "imageItem": "overhead_press_item.8a7f455d.png",
+      "file": "overhead-press.txt",
+      "listId": 6
+    },
+    {
+      "id": 5,
+      "name": "Learn Barbell Row",
+      "category": "Strength Training",
+      "priceCents": 1000,
+      "imageItem": "barbell_row_item.e9c58867.png",
+      "file": "barbell-row.txt",
+      "listId": 7
+    },
+    {
+      "id": 6,
+      "name": "Learn Pullups",
+      "category": "UBS Training",
+      "priceCents": 1000,
+      "imageItem": "pullup_item.f5cc239f.png",
+      "file": "pullups.txt",
+      "listId": 8
+    },
+    {
+      "id": 7,
+      "name": "Learn Dips",
+      "category": "UBS Training",
+      "priceCents": 1000,
+      "imageItem": "dips_item.9c37bf0f.png",
+      "file": "dips.txt",
+      "listId": 9
+    },
+    {
+      "id": 8,
+      "name": "Bundle Pack",
+      "category": "Strength/UBS Training",
+      "priceCents": 5000,
+      "imageItem": "bundle_item.3c5944a4.png",
+      "file": "bundle-pack.txt",
+      "listId": 10
+    }
+  ]

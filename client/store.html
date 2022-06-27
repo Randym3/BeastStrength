@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Store</title>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://kit.fontawesome.com/194b7fc38b.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" type="module"></script>
+</head>
+<body class="font-karla bg-slate-100">
+  <header class="text-gray-700">
+		<nav class="fixed flex justify-between bg-white py-2 px-4 text-black top-0 inset-x-0 z-10">
+			<a class="flex items-center" href="index.html">
+				<img class="w-10" src="img/icons8-barbell-100.svg" alt="">
+				<h3 class="ml-4 text-xl font-bold">Beast Strength</h3>
+			</a>
+			<ul class="flex items-center justify-self-center space-x-6 mr-52 md:hidden">
+				<li><a class="border-b-2 border-red-800 hover:text-red-800" href="store.html">Store</a></li>
+				<li><a data-login class="hover:text-red-800" href="#">Login</a>
+				</li>
+			</ul>
+			<div class="content-['']"></div>
+			<div class="hidden md:block">
+				<button id="menu-btn" class="hidden hamburger focus:outline-none md:block">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+			<div class="hidden md:block">
+				<div id="menu"
+					class="absolute flex-col items-center hidden self-end py-8 mt-12 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+					<a class="hover:text-red-800" href="store.html">Store</a>
+					<a data-login-wrapper class="hover:text-red-800" href="#">Login</a>
+				</div>
+		</nav>
+  </header>
+  <section class="text-gray-700 min-h-screen">
+    <div class="container px-5 py-40">
+      <div data-store-container class="grid gap-4 grid-cols-4 auto-rows-auto mx-auto lglg:grid-cols-3 lglg:max-w-5xl smlg:grid-cols-2 smlg:max-w-3xl md:grid-cols-1 md:max-w-md">
+      </div>
+    </div>
+  </section>
+	<section>
+		<div id="login-container" class="hidden top-0 left-0 h-screen fixed w-full bg-modal z-10">
+			<form data-email-form class="form relative rounded-md py-5 px-2.5 w-80 bg-white text-center">
+				<i id="close-icon" class="fas fa-window-close text-red-500 absolute top-1 right-5 text-2xl hover:text-red-600 cursor-pointer"></i>
+				<h3 class="mb-5 font-bold text-xl">Login</h3>
+				<label for="loginEmail" class="uppercase text-lg">Email</label>
+				<input data-email-input name="loginEmail" class="block mt-2.5 mb-5 mx-auto text-center py-2.5 px-3.5 border-2 rounded border-neutral-300 focus:outline-none focus:border-sky-500" type="email" autocomplete="email" value>
+				<button type="submit" class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800">Submit</button>
+			</form>
+		</div>
+	</section>
+  <template id="store-item-template">
+    <div data-store-item class="p-4">
+      <div class="block relative h-48 rounded overflow-hidden">
+        <img data-image alt="ecommerce" class="object-cover object-center w-full h-full block">
+      </div>
+      <div class="mt-4 flex items-end justify-between">
+        <div>
+          <h3 data-category class="text-gray-500 text-xs tracking-widest title-font uppercase mb-1 whitespace-nowrap"></h3>
+          <h2 data-name class="name text-gray-900 title-font text-lg font-medium"></h2>
+          <p data-price class="mt-1"></p>
+        </div>
+        <button data-purchase-button class="text-white py-2 px-4 text-xl bg-red-600 rounded hover:bg-red-700 whitespace-nowrap"></button>
+      </div>
+    </div>
+  </template>
+</body>
+<footer class="bg-zinc-800 text-white mt-auto">
+  <div class="flex justify-center p-10">
+    <div>
+      <ul class="flex space-x-8 sm:flex-col sm:justify-center sm:items-center sm:space-x-0">
+        <li><a class="hover:text-red-800" href="#">About</a></li>
+        <li><a class="hover:text-red-800" href="#">Contact Us</a></li>
+        <li><a class="hover:text-red-800" href="#">Terms</a></li>
+        <li><a class="hover:text-red-800" href="#">Privacy</a></li>
+        <li><a class="hover:text-red-800" href="#">FAQ</a></li>
+      </ul>
+      <div>
+        <ul class="flex justify-center space-x-6 my-4">
+          <li><a class="hover:text-red-800" href="#"> <i class="social-icon fab fa-facebook-f"></i></a></li>
+          <li><a class="hover:text-red-800" href="#"><i class="social-icon fab fa-twitter"></i></a></li>
+          <li><a class="hover:text-red-800" href="#"><i class="social-icon fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="flex justify-center">
+        <p>Copyright&copy; Beast Strength</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>

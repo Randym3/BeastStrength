@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition:  all 0.25s;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px)
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px)
+}
+
+.form {
+    margin: 20vh auto;
+}
+
+.download-btn {
+    background-color: hsl(217, 91%, 60%);
+}
+
+.download-btn:hover {
+    background-color: hsl(217, 91%, 50%) !important;
+}
+
+.grid {
+    max-width: 88rem;
+}
+
+@media (max-width: 1600px) {
+    .grid {
+        max-width: 75rem;
+    }
+    
+}
+
+@media (max-width: 1600px) {
+    .grid {
+        max-width: 75rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header-image {
+        background-position-x: 52.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-image {
+        background-position: 60%;
+    }
+}
