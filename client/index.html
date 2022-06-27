@@ -68,47 +68,6 @@
 			</form>
 		</div>
 	</section>
-	<section data-cart class="invisible">
-		<div data-cart-items-wrapper class="invisible mb-4 top-0 right-0 mr-4 mt-20 fixed md:hidden">
-			<div style="max-height: calc(100vh - 6rem);"
-				class="bg-white text-gray-700 body-font shadow-lg border rounded-lg flex flex-col">
-				<div data-cart-items class="overflow-y-auto px-4 pt-4">
-				</div>
-				<div class="flex justify-between items-end border-t p-4">
-					<span class="font-bold text-lg uppercase">Total</span>
-					<span data-cart-total class="font-bold"></span>
-				</div>
-        <div class="mx-auto py-5">
-					<a class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800 cursor-pointer" href="shopping-cart.html">View Cart</a>
-				</div>
-			</div>
-		</div>
-		<button data-cart-button class="fixed top-0 right-0 mr-4 mt-2 w-12 bg-red-700 p-2 rounded-full text-white z-20 hover:bg-red-800 md:hidden">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-			</svg>
-			<div data-cart-quantity class="bg-red-500 rounded-full text-xs absolute w-6 h-6 flex justify-center items-center right-0 bottom-0 transform translate-x-2 translate-y-2">
-				</div>
-		</button>
-	</section>
-  <template id="cart-item-template">
-    <div data-item class="mb-6">
-      <div class="block relative h-24 rounded overflow-hidden">
-        <img data-image alt="ecommerce" class="object-cover object-center w-full h-full block rounded">
-        <button data-remove-from-cart-button
-          class="absolute top-0 right-0 bg-black rounded-tr text-white w-6 h-6 text-lg flex justify-center items-center">&times;</button>
-      </div>
-      <div class="mt-2 flex justify-between">
-        <div class="flex items-center title-font">
-          <h2 data-name class="text-gray-900 text-lg font-medium">
-          </h2>
-          <span data-quantity class="text-gray-600 text-sm font-bold ml-1"></span>
-        </div>
-        <div data-price></div>
-      </div>
-    </div>
-  </template>
 </body>
 
 </html>
