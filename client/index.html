@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" http-equiv="Content-Security-Policy"
+		content="script-src 'self' js.stripe.com m.stripe.network kit.fontawesome.com 'unsafe-inline';">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +52,8 @@
 				<div>
 					<p class="text-xl mb-8">We know what it takes to turn you into the athelete you want to be</p>
 				</div>
-				<a class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800" href="store.html">Start
+				<a class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800"
+					href="store.html">Start
 					Shopping</a>
 			</div>
 			<div></div>
@@ -60,11 +62,15 @@
 	<section>
 		<div id="login-container" class="hidden top-0 left-0 h-screen fixed w-full bg-modal z-10">
 			<form data-email-form class="form relative rounded-md py-5 px-2.5 w-80 bg-white text-center">
-				<i id="close-icon" class="fas fa-window-close text-red-500 absolute top-1 right-5 text-2xl hover:text-red-600 cursor-pointer"></i>
+				<i id="close-icon"
+					class="fas fa-window-close text-red-500 absolute top-1 right-5 text-2xl hover:text-red-600 cursor-pointer"></i>
 				<h3 class="mb-5 font-bold text-xl">Login</h3>
 				<label for="loginEmail" class="uppercase text-lg">Email</label>
-				<input data-email-input name="loginEmail" class="block mt-2.5 mb-5 mx-auto text-center py-2.5 px-3.5 border-2 rounded border-neutral-300 focus:outline-none focus:border-sky-500" type="email" autocomplete="email" value>
-				<button type="submit" class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800">Submit</button>
+				<input data-email-input name="loginEmail"
+					class="block mt-2.5 mb-5 mx-auto text-center py-2.5 px-3.5 border-2 rounded border-neutral-300 focus:outline-none focus:border-sky-500"
+					type="email" autocomplete="email" value>
+				<button type="submit"
+					class="py-3 px-6 text-white uppercase font-bold bg-red-700 rounded hover:bg-red-800">Submit</button>
 			</form>
 		</div>
 	</section>

@@ -53,6 +53,6 @@ async function renderStoreItem() {
       })
     }
 
-    storeItemContainer.appendChild(storeItem)
+    storeItemContainer.append(storeItem)
   })
 }

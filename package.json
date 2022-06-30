@@ -1,0 +1,21 @@
+{
+  "name": "beast-strength",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "npm run start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eli1714/BeastStrength.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eli1714/BeastStrength/issues"
+  },
+  "homepage": "https://github.com/eli1714/BeastStrength#readme"
+}
